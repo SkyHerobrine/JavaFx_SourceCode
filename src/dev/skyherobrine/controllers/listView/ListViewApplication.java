@@ -30,7 +30,9 @@ public class ListViewApplication extends Application implements Initializable {
 		// TODO Auto-generated method stub
 		listView.getItems().addAll(listNames);
 		
-		//Thêm sự kiện khi người dùng click vào một trong những items của ListView sẽ hiển thị trên Title
+		/*
+		 * Thêm sự kiện khi người dùng click vào một trong những items của ListView sẽ hiển thị trên Title
+		 */
 		listView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
 			@Override
 			public void changed(ObservableValue<? extends String> arg0, String arg1, String arg2) {
