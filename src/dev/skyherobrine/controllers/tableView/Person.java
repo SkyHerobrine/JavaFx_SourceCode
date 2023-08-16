@@ -1,7 +1,5 @@
 package dev.skyherobrine.controllers.tableView;
 
-import java.time.LocalDate;
-
 public class Person {
 
 	private int id;
