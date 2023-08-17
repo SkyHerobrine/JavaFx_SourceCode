@@ -38,7 +38,7 @@ public class MediaViewApplication extends Application implements Initializable {
 		file = new File("GravityFalls.mp4");
 		media = new Media(file.toURI().toString());
 		mediaPlayer = new MediaPlayer(media);
-		mediaView.setMediaPlayer(mediaPlayer);
+		mediaView.setMediaPlayer(mediaPlayer);	//Từ phương thức này mới hiển thị video trên App
 	}
 	
 	public void play(ActionEvent event) {
