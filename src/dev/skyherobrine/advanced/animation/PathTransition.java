@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.animation.Animation;
+import javafx.animation.Interpolator;
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -31,7 +32,8 @@ public class PathTransition extends Application implements Initializable {
 		path = new javafx.animation.PathTransition();
 		path.setNode(rectangle);
 		path.setDuration(Duration.seconds(3));
-		path.setAutoReverse(true);
+		path.setAutoReverse(false);
+		path.setInterpolator(Interpolator.LINEAR);
 		path.setCycleCount(Animation.INDEFINITE);
 		path.setPath(new Circle(100));
 		path.play();
